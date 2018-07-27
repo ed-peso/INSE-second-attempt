@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/maincss.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   </head>
+	<body>
+        <div class="container" style="background-color: Violet; min-height: 1080px">
+        	<nav class="navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <img style="max-height:50px"  src="img/libraryport.png"></img>
+                    </div>
+                    <ul class="nav navbar-nav" style="padding-top:0.75%">
+                      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" style="padding-top:0.75%">
+                       <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      				   <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                  </div>
+            </nav>
+            	<div class="sidebar" style="width: 19%; float: right; margin: 1%; padding:5px; background-color: #f0f0f0">
+                    <h2 align="center">Sort</h2>
+                    <form>
+                    	<div class="form-group">
+                            <label for="type">Category:</label>
+                            <select class="form-control" id="type">
+                           	    <option>Any</option>
+                                <option>Business</option>
+                                <option>Law</option>
+                                <option>Computing</option>
+                                <option>Science</option>
+                             </select>
+                        </div>
+                        <div class="form-group">
+                        	<label for="Books">Number Of Copies:</label>
+                        	<select class="form-control" id="books">
+                           	    <option>Any</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                             </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="extras">Extra:</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Available</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Physical copy</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Borrow</label>
+                            </div>
+						</div>
+                    </form>
+                    <div><a class="btn btn-default btn-sm btn-block" type="button" href="search2.html">Search</a></div>
+                </div>
+          <div class="navbar searchbar">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a>View <span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          <div class="post">
+         		<contianer>
+                	<img class="img-thumbnail" style="max-height: 20%; max-width: 20%; float: left; border-radius: 5px;" src="img/mySQL.jpg"></img>
+                  <h3 style="padding-left:22%">A guide to MySQL</h3>
+         			<p style="padding-left:22%">Type: Book <br> Author(s):  Pratt, Philip J., Last, Mary Z. <br> Publisher:  Course Technology/Cengage Learning <br> ISBN-10:  1418836354</p>
+                    <a class="btn btn-default btn-sm" style="float:right">View Content</a>
+                </contianer>
+          </div>
+          <div class="post">
+         		<contianer>
+                	<img class="img-thumbnail" style="max-height: 20%; max-width: 20%; float: left; border-radius: 5px;" src="img/DatabaseCon.jpg"></img>
+                  <h3 style="padding-left:22%">Database system concepts</h3>
+         			<p style="padding-left:22%">Type: Book <br> Author(s): Silberschatz, Abraham, Korth, Henry F., Sudarshan, S. <br> Publisher: McGraw-Hill <br> ISBN-13: 9780071289597</p>
+                    <a class="btn btn-default btn-sm" style="float:right">View Content</a>
+                </contianer>
+          </div>
+        </div>
+
+    </body>
+</html>
